@@ -21,11 +21,14 @@ signUPBtn.addEventListener("click", function(e) {
     // التحقق من أن جميع الحقول ممتلئة
     if (userName.value === "" || password.value === "" || email.value === "") {
         alert("يرجى ملء جميع الحقول"); // رسالة تحذيرية للمستخدم
-    } else {
+    } 
+    
+    else {
         // حفظ البيانات في التخزين المحلي
         savestroge("userName", userName.value);
         savestroge("password", password.value);
         savestroge("email", email.value);
+        savestroge('isloggedin',true)
         alert("تم التسجيل بنجاح");
     }
 });

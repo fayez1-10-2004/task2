@@ -453,3 +453,10 @@ function searchData(value) {
     // عرض نتائج البحث في الصفحة
     allProducts.innerHTML = prosesrch.join('');
 }
+
+let isloggedin=JSON.parse(localStorage.getItem('isloggedin'))
+if(!isloggedin){
+
+window.location='login.html'
+
+}
