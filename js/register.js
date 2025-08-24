@@ -29,6 +29,7 @@ signUPBtn.addEventListener("click", function(e) {
         savestroge("password", password.value);
         savestroge("email", email.value);
         savestroge('isloggedin',true)
+        window.location="login.html"
         alert("تم التسجيل بنجاح");
     }
 });
